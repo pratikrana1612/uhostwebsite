@@ -1,0 +1,164 @@
+@font-face
+{
+    font-family:"anonymous";
+    src:url("AnonymousmousPro-Regular.ttf");
+
+}
+@font-face
+{
+    font-family:"anonymous";
+    src:url("Anonymouspro-Bold.ttf");
+    font-weight:700;
+}
+main{
+    padding-top:2rem;
+}
+.packages{
+    width:80%;
+    /* margin:0.6rem 0rem 0.3rem 0rem; */
+    margin:1rem 0;
+    border:5px solid black;
+    border-left:none;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+}
+.packages-recommended
+{
+    position:absolute;
+    top:0;
+    right:0;
+    background-color:#ff5454;
+    color:white;
+    font-size:0.7rem;
+    padding:0.6rem;
+    z-index:10;
+    width:12rem;
+    text-align:center;
+    transform:rotatez(45deg) translate(3.5rem, -1.5rem);
+    transform-origin:center;
+}
+.packages:hover,
+
+.packages:active
+{
+    box-shadow:2px 2px 4px rgba(0,0,0,0.5);
+    border-color:#ff5454 /*!important*/;
+    border-left:none;
+}
+.packages-a
+{
+    color:inherit;
+    display:block;
+    padding:2rem;
+    text-decoration:none;
+}
+.packages-h1
+{
+    color:black;
+}
+
+.packages-h2
+{
+    color:#979797;
+}
+.packages-p
+{
+    background-color:white;
+    border:2px solid #0e4f0e;
+    padding:1rem;
+    color: #0e4f0e;
+    /* text-decoration:underline dotted red; */
+    /* font shorthand */
+    /* font:font-style font-variant font-weight font-size/line-height font-family */
+    /* font:italic small-caps 700 1.2rem/2 "Anonymouspro",sans-serif; */
+    font-size:1.2rem;
+    /* font:status-bar; */
+    /* font:700 1.2rem "Anonymouspro",sans-serif; */
+    /* text-shadow:2px 2px 5px gray,2px 2px px red; */
+}
+#plus
+{
+    background-color:rgba(213,255,220,0.95);
+}
+#free
+{
+    background-color:rgba(234,252,237,0.95);
+    float:right;
+    border-right:none;
+    border-left:5px solid black;
+    text-align:right;
+}
+#free:hover,
+#free:active{
+    border-color:#ff5454;
+    border-right:none;
+}
+.clear-fix
+{
+    clear:both;
+}
+#premium
+{
+    background-color: rgba(14,79,31,0.95);
+}
+.packages3-h1
+{
+    color:white;
+    font-weight:900;
+}
+.packages3-h2
+{
+    color:#979797;
+}
+.background
+{
+    background:url(../images/plans-background.jpg)center/cover;
+    filter:grayscale(40%);
+    background-repeat:no-repeat;
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    z-index:-1;
+}
+@media (min-width:40rem)
+{
+    main
+    {
+      max-width:1500px;
+      margin-right:auto;
+      margin-left:auto;
+    }
+}
+@media (min-width:1300px){
+
+    .packages,#free
+    {
+        border:5px solid black;
+    }
+    .packages:hover,
+    .packages:active
+    {
+    border-left:5px solid #ff5454;
+    }
+    #free:hover,
+    #free:active
+    {
+    border-right:5px solid #ff5454;
+    }
+}
+.packages:hover{
+    animation:updown 500ms ease-out forwards;
+}
+@keyframes updown
+{
+    from
+    {
+        transform:translatey(0);
+    }
+    to
+    {
+        transform:translateY(-10px);
+        box-shadow:4px 4px 8px 4px rgb(73, 71, 71);
+    }
+}  

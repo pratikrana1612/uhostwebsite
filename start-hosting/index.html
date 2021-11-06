@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>uHost Signup</title>
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../shared.css">
+    <link rel="stylesheet" href="start-hosting.css">
+</head>
+
+<body>
+    <div class="back-drop"></div>
+    <header class="main-header">
+        <div class="main-div">
+            <a href="index.html" class="main-brand">
+                <img src="../images/uhost-icon.png"></img>
+            </a>
+            <button class="toggle-button">
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+            </button>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li class="nav-li nav-li-button">
+                    <a href="../packages/index.html">Packages</a>
+                </li>
+                <li class="nav-li nav-li-button">
+                    <a href="../customers/index.html">Customers</a>
+                </li>
+                <li class="nav-li nav-li-button animation">
+                    <a href="../index.html" class="animation">Start Hosting</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item mobile-nav__item--cta">
+                <a href="../packages/index.html">Packages</a>
+            </li>
+            <li class="mobile-nav__item mobile-nav__item--cta">
+                <a href="../customers/index.html">Customers</a>
+            </li>
+            <li class="mobile-nav__item mobile-nav__item--cta addanimation">
+                <a href="start-hosting/index.html" class="addanimation">Start Hosting</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="signup-page">
+        <h1 class="signup-title">Awesome! Let's dive right in!</h1>
+        <form action="index.html" class="signup-form">
+            <label for="title">Title</label>
+            <select id="title" class="invalid">
+                <option value="mr">Mr.</option>
+                <option value="ms">Ms.</option>
+            </select>
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" required>
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" required>
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+            <input type="checkbox" id="agree-terms" required>
+            <label for="agree-terms">Agree to
+                <a href="#">Terms &amp; Conditions</a>
+            </label>
+            <button type="submit" class="button">Sign Up</button>
+        </form>
+    </main>
+    <footer class="main-footer">
+        <nav>
+            <ul class="footer-ul">
+                <li class="footer-li">
+                    <a href="#" class="footer-a">Support</a>
+                </li>
+                <li class="footer-li">
+                    <a href="#" class="footer-a">Terms of Use</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="../shared.js"></script>
+</body>
+
+</html>
