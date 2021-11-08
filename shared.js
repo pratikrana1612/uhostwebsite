@@ -40,18 +40,18 @@ backdrop.addEventListener('click', function () {
     // mobileNav.style.display='none';
     mobileNav.classList.remove('open');
     closemodel();
-    modal.style.display='block';
     starthosting.classList.remove('animation');
+    modal.style.display='block';
 }
 );
 toggleButton.addEventListener('click', function () 
     {
     // mobileNav.style.display='block';
     // backdrop.style.display='block';
-    // modal.style.display='none';
     mobileNav.classList.add('open');
     backdrop.classList.add('open');
     starthosting.classList.add('animation');
+    modal.style.display='none';
     }
 );
 
